@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 200px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+body {
+    background: #234b56;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+img {
+    width: 300px;
+}
+
+input {
+    display: none;
+}
+
+#html:checked ~ .css,
+#html:checked ~ .js {
+    opacity: 0.1;
+    transition: .5s;
+    rotate: 90deg;
+}
+
+#css:checked ~ .html,
+#css:checked ~ .js {
+    opacity: 0.1;
+    transition: .5s;
+    rotate: 90deg;
+}
+
+#js:checked ~ .html,
+#js:checked ~ .css {
+    opacity: 0.1;
+    transition: .5s;
+    rotate: 90deg;
+}
+
+
+#all:checked ~ .html,
+#all:checked ~ .css,
+#all:checked ~ .js
+{
+    transition: 1s;
+}
